@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Estilos base para dispositivos móveis */
+.container-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.info-left {
+  width: 100%;
+  gap: 2rem;
+}
+
+.text-container {
+  width: 100%;
+  font-size: 18px;
+}
+
+.barra-right {
+  display: none;
+}
+
+.image-logo img {
+  max-height: 200px;
+}
+
+.title-news > :first-child {
+  font-size: 18px;
+}
+
+.title-news > :nth-child(2) {
+  font-size: 16px;
+}
+
+/* Estilos para telas maiores que 767px (desktop e tablets) */
+@media screen and (min-width: 768px) {
+  .main-box {
+    flex-direction: row;
+  }
+
+  .info-left {
+    width: 70%;
+    gap: 4rem;
+  }
+
+  .text-container {
+    font-size: 20px;
+  }
+
+  .barra-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Restante dos estilos para telas maiores aqui */
+}
