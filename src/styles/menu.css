@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.container-box{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-box{
+    display: flex;
+    flex-direction: row;
+    width: 84.5%;
+    height: 100%;
+    
+}
+
+.info-left {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    position: relative; 
+}
+
+.info-left::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(7px) saturate(70%);
+    -webkit-backdrop-filter: blur(7px) saturate(70%);
+    background-color: rgba(248, 249, 249, 0.65);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: -1;
+    content: ''; 
+}
+
+
+.image-logo{
+    width: 100%;
+    max-height: 365px;
+    padding: 20px;
+}
+
+.image-logo img{
+    
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+/* Barra Lateral */
+.barra-right {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    position: relative; 
+}
+
+.barra-right::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    backdrop-filter: blur(7px) saturate(70%);
+    -webkit-backdrop-filter: blur(7px) saturate(70%);
+    background: rgba(46, 45, 107, 0.65);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    
+    z-index: -1;
+}
+
+.title-news{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.title-news > :first-child{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    margin-top: 1rem;
+    font-size: 22px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.title-news > :nth-child(2){
+    display: flex;
+    margin: auto;
+    width: 90%;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Apenas para o vídeo*/
+.video-card {
+    position: relative;
+    margin: auto;
+    width: 92%;
+    height: 200px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .play-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 22px solid #fff;
+    opacity: 0.7;
+  }
+  
+  .popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+  }
+  
+  .popup {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
