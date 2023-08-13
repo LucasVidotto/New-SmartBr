@@ -1,11 +1,11 @@
 import './App.css'
-import { Menu } from './Pages/Menu/menu'
+import { Routers } from './Routers/Routers'
 
 function App() {
 
   return (
     <>
-      <Menu />
+      <Routers/>
     </>
   )
 }
